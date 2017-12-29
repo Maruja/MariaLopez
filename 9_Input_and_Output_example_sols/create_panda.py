@@ -3,12 +3,12 @@ import pandas as pd
 
 # generate random data
 data = np.random.randint(0, high=10, size=(4, 4))
-
+print(data)
 # first column is number 1-4
 data[:,0]=np.arange(4)
 
 headers = ["score1", "score2", "score3"]
-
+	
 print(data)
 
 data_frame = pd.DataFrame(data=data[1:,1:],    # values
